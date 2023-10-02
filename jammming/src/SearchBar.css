@@ -32,14 +32,17 @@ section {
     flex: auto;
 }
 
-section h2 {
+section h2 { 
     text-align: center;
     font-size: 2rem;
 }
 
 .songs {
-    font-size: 1.25rem;
     padding: 5px;
+}
+
+.songtitle, .songartist, .albumntitle {
+    margin: 0;
 }
 
 .addbutton {
