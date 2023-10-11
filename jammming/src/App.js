@@ -22,11 +22,11 @@ const [customAlbumn, setCustomAlbumn] = useState('Poop');
       <SearchBar />
       <main className='container'>
         <section>
-          <h2>Search Results</h2>
+          <h2>Search Results</h2> 
           <SearchResults song={song} artist={artist} albumn={albumn}/>
         </section>
         <section>
-          <h2>Playlist</h2>
+          <input className='container' placeholder='Playlist Name' type='text' />
           <PlayList song= {customSong} artist={customArtist} albumn={customAlbumn}/>
         </section>
       </main>

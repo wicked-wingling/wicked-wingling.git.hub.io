@@ -37,6 +37,10 @@ section h2 {
     font-size: 2rem;
 }
 
+input {
+    font-size: 2rem;
+}
+
 .songs {
     padding: 5px;
 }
