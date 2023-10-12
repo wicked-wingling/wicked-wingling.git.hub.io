@@ -1,0 +1,8 @@
+.playlist {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+    height: 80px;
+    width: 45%;
+    color: white;
+}

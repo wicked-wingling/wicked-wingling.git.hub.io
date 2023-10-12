@@ -1,0 +1,11 @@
+.searchBar input {
+    border-radius: 15px;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
