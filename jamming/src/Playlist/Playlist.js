@@ -1,17 +1,22 @@
-import React from 'react';
+import React from "react";
 import './Playlist.css';
 
-const Playlist =() => {
-    return (
-        <section className='playlist'>
-            <button className='addButton'>-</button>
-            <div className='card'>
-                <h3>song title</h3>
-                <p>albumn</p>
-                <p>artist</p>
-            </div>            
-        </section>
-    );
+const Playlist = (props) => {
+
+const handleRemoveClick = () => {
+    props.removeResult(props.result)
 }
+
+    return (
+        <li className='playlistCard'>
+            <button id='removeButton' onClick={handleRemoveClick}>-</button> 
+            <div>
+                <h3>{props.result.song}</h3>
+                <p>{props.result.artist}</p>
+                <p>{props.result.albumn}</p>    
+            </div>                       
+        </li>
+    );
+};
 
 export default Playlist;

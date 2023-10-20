@@ -5,14 +5,34 @@ body {
 
 header {
   background-color: black;
-  font-size: 5rem;
+  font-size: 2rem;
   color: rgb(9,112,181);
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.login {
+  font-size: 1rem;
+  color: red;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   padding-top: 50px;
+}
+
+.card {
+  display: flex;
+}
+
+.loginPrompt {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 5rem;
 }

@@ -1,8 +1,24 @@
-.playlist {
+ul {
+    width: 45%;
+}
+
+li h3, p {
+    margin: 0;
+}
+li p {
+    font-weight: 400;
+}
+li button {
+    margin: auto 0;
+}
+li {
+    margin: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+    list-style: none;
+    background-color: rgba(9,112,181,1);
+}
+.playlistCard {
     display: flex;
     justify-content: space-between;
-    border-bottom: 5px solid black;
-    height: 80px;
-    width: 45%;
-    color: white;
 }

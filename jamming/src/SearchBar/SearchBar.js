@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SearchBar.css';
 
-const SearchBar = () => {
+const SearchBar = (props) => {
+    const [text, setText] = useState('');
+
+    const handleTextChange = (e) => {
+        setText(e.target.value)
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        props.search(text)
+        setText('');
+    };
+
     return (
-    <form className='searchBar'>
-        <label for="search bar"></label>
-        <input type='text' name='search' id='search' placeholder='Search for Songs'></input>
-        <input type='submit' value='Search'></input>
-    </form>
+        <form className='searchBar' onSubmit={handleSubmit}>
+            <input 
+            value={text}
+            type='text' 
+            name='search'
+            placeholder='Search for Songs' 
+            onChange={handleTextChange}
+            />
+            <input type='submit' value='Search' />
+        </form>
     )
 }
     
@@ -15,9 +32,3 @@ const SearchBar = () => {
 
 export default SearchBar;
 
-
-/*
-
-
-
-*/
