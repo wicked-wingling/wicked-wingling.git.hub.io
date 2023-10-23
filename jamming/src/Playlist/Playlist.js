@@ -11,9 +11,9 @@ const handleRemoveClick = () => {
         <li className='playlistCard'>
             <button id='removeButton' onClick={handleRemoveClick}>-</button> 
             <div>
-                <h3>{props.result.song}</h3>
-                <p>{props.result.artist}</p>
-                <p>{props.result.albumn}</p>    
+                <h3>{props.result.name}</h3>
+                <p>{props.result.artists[0].name}</p>
+                <p>{props.result.album.name}</p>    
             </div>                       
         </li>
     );

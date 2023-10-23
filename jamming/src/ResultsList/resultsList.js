@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import './resultsList.css';
 
 const ResultsList = (props) => {
@@ -10,9 +10,9 @@ const handleAddClick = () => {
     return (
         <li className='resultCard'>
             <div>
-                <h3>{props.result.song}</h3>
-                <p>{props.result.artist}</p>
-                <p>{props.result.albumn}</p>    
+                <h3>{props.result.name}</h3>
+                <p>{props.result.artists[0].name}</p>
+                <p>{props.result.album.name}</p>    
             </div>
             <button id='addButton' onClick={handleAddClick}>+</button>            
         </li>
